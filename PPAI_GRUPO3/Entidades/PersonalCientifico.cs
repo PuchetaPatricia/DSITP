@@ -27,5 +27,15 @@ namespace PPAI_GRUPO3.Entidades
             this.nroDocumento = nroDoc;
 
         }
+
+        public int getNroDocumento()
+        {
+            return nroDocumento;
+        }
+
+        public string getMail()
+        {
+            return correoElectronicoPersonal;
+        }
     }
 }

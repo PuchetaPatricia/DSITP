@@ -9,7 +9,7 @@ namespace PPAI_GRUPO3.Entidades
     internal class CambioEstadoRT
     {
         private DateTime fechaHoraDesde;
-        private DateTime fechaHoraHasta;
+        private DateTime? fechaHoraHasta = null;
         private Estado estado;
 
         public CambioEstadoRT(DateTime desde, DateTime hasta, Estado est)

@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,14 +51,19 @@
     <Compile Include="AccesoABD\ABD_TipoRecurso.cs" />
     <Compile Include="Entidades\AsignacionCientificoDelCI.cs" />
     <Compile Include="Entidades\CambioEstadoRT.cs" />
+    <Compile Include="Entidades\CambioEstadoTurno.cs" />
     <Compile Include="Entidades\CentroInvestigacion.cs" />
     <Compile Include="Entidades\Estado.cs" />
     <Compile Include="Entidades\GestorReservaDeTurno.cs" />
+    <Compile Include="Entidades\InterfazEmail.cs" />
     <Compile Include="Entidades\Marca.cs" />
     <Compile Include="Entidades\Modelo.cs" />
     <Compile Include="Entidades\PersonalCientifico.cs" />
     <Compile Include="Entidades\RecursoTecnologico.cs" />
+    <Compile Include="Entidades\Sesion.cs" />
     <Compile Include="Entidades\TipoRecurso.cs" />
+    <Compile Include="Entidades\Turno.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -10,3 +10,15 @@ C:\Users\usuario\Desktop\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.csproj.GenerateResour
 C:\Users\usuario\Desktop\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.csproj.CoreCompileInputs.cache
 C:\Users\usuario\Desktop\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.exe
 C:\Users\usuario\Desktop\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.pdb
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\bin\Debug\PPAI_GRUPO3.exe.config
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\bin\Debug\PPAI_GRUPO3.exe
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\bin\Debug\PPAI_GRUPO3.pdb
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.csproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.Menu.resources
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.Properties.Resources.resources
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.solucion.PantallaRegistrarTurno.resources
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.csproj.GenerateResource.cache
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.exe
+C:\Users\usuario\Documents\GitHub\DSITP\PPAI_GRUPO3\obj\Debug\PPAI_GRUPO3.pdb

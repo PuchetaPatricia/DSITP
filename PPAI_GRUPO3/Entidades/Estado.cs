@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PPAI_GRUPO3.Entidades
 {
-    internal class Estado
+    public class Estado
     {
         private string nombre;
         private string descripcion;
@@ -27,10 +27,31 @@ namespace PPAI_GRUPO3.Entidades
         {
             return nombre;
         }
-
+        public string getNombre()
+        {
+            return nombre;
+        }
         public bool esReservable()
         {
             return esReservablee;
+        }
+
+        public bool esAmbitoTurno()
+        {
+            if (ambito.Equals("Turno"))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool esReservado()
+        {
+            if (nombre.Equals("Reservado"))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

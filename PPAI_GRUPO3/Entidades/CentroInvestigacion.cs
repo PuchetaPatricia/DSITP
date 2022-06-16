@@ -21,10 +21,11 @@ namespace PPAI_GRUPO3.Entidades
         private string reglamento;
         private string caracteristicasGenerales;
         private DateTime fechaAlta;
-        private string tiempoAntelacionReserva;
+        private int tiempoAntelacionReserva = 10;
         private DateTime fechaBaja;
         private string motivoBaja;
         private List<AsignacionCientificoDelCI> asignacionesCientificos;
+        private AsignacionCientificoDelCI asignacionDelCientifico;
 
         public CentroInvestigacion(string n, List<AsignacionCientificoDelCI> asignacionesCientificos)
         {
@@ -35,6 +36,26 @@ namespace PPAI_GRUPO3.Entidades
         public string obtenerNombreCI()
         {
             return nombre;
+        }
+
+        public bool esCientificoActivo(PersonalCientifico personal)
+        {
+            foreach(AsignacionCientificoDelCI asignacion in asignacionesCientificos)
+            {
+                if (asignacion.esCientificoActivo(personal))
+                {
+                    asignacionDelCientifico = asignacion;
+                    return true;
+                }
+            }
+            return false;
+
+        }
+
+        public AsignacionCientificoDelCI reservarTurnoCientifico(Turno turnoSeleccionado)
+        {
+            asignacionDelCientifico.setTurno(turnoSeleccionado);
+            return asignacionDelCientifico;
         }
 
     }
