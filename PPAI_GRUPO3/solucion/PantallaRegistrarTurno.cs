@@ -239,12 +239,15 @@ namespace PPAI_GRUPO3.solucion
 
         private void tomarSeleccionTurno(object sender, EventArgs e)
         {
-            if (txtEstadoTurno.Equals("Discponible"))
+            txtFechaFin.Visible = true;
+            txtFechaInicio.Visible = true;
+            txtEstadoTurno.Visible = true;
+
+            if (txtEstadoTurno.Text.Equals("Disponible"))
             {
                 string[] recurso = gestorReservaDeTurno.tomarSeleccionTurno(txtFechaInicio.Text, txtFechaFin.Text, txtEstadoTurno.Text);
-                txtFechaFin.Visible = true;
-                txtFechaInicio.Visible = true;
-                txtEstadoTurno.Visible = true;
+                
+
                 MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
                 String mensajeCarga = ("|Numero Recurso Tecnologico: " + recurso[0] + "\n|Centro de investigacion: " + recurso[1] + "\n|" + recurso[2] + "\n|Estado Recurso Tecnologico: " + recurso[3] + "\nTURNO:\n|Fecha Hora Inicio: " + txtFechaInicio.Text + "\n|Fecha Hora fin: " + txtFechaInicio.Text + "\n|Estado Turno: " + txtEstadoTurno.Text);
 
@@ -260,9 +263,17 @@ namespace PPAI_GRUPO3.solucion
 
         private void tomarConfirmacionReserva(object sender, EventArgs e)
         {
-            gestorReservaDeTurno.tomarConfirmacionReserva();
-            MessageBox.Show("Turno reservado.");
-            this.Hide();
+            if(txtEstadoTurno.Text.Equals("Disponible"))
+            {
+                gestorReservaDeTurno.tomarConfirmacionReserva();
+                MessageBox.Show("Turno reservado.");
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("El turno seleccionado no se puede reservar");
+            }
+            
         }
 
 
